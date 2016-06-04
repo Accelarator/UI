@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/homework_publish_item"/>
+
+
+        <TextView
+            android:id="@+id/release_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="发布时间"/>
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="课程名称"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="作业来源"
+                />
+
+            <Spinner
+                android:id="@+id/homework_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/homework_content"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:hint="@string/input_homework_content"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:background="@drawable/cornershape"
+            android:layout_margin="2dp"/>
+
+        <Spinner
+            android:id="@+id/homework_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"/>
+
+        <EditText
+            android:id="@+id/homework_deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/input_homework_deadline"
+            android:background="@drawable/cornershape"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/homework_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:text="@string/button_homework_submit" />
+
+
+
+    </LinearLayout>
+</ScrollView>

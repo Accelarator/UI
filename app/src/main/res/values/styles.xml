@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- 主容器布局 -->
+    <style name="mainConter">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_main</item>
+    </style>
+
+    <style name="MMBody">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingTop">26.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:paddingBottom">18.0dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="customLoginCheckBox">
+        <item name="android:paddingLeft">30.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:button">@drawable/checkbox_bg_login</item>
+    </style>
+
+    <style name="btn_default_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:background">@drawable/d_btn_default</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="btn_default_style_2">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/btn_text_color_2</item>
+        <item name="android:background">@drawable/d_btn_default_2</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="header">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mmtitle_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#ff404040</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="btn_title">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">75.0dip</item>
+    </style>
+
+</resources>
